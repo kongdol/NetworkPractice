@@ -18,10 +18,15 @@ class ViewController: UIViewController {
     }
     
     @objc func movieButtonTapped() {
+        
         print("무비버튼")
+        let vc = MovieViewController()
+        present(vc, animated: true)
     }
 
     @IBAction func lottoButtonTapped(_ sender: UIButton) {
+        let vc = LottoViewController()
+        present(vc, animated: true)
         print("로또버튼")
     }
     
