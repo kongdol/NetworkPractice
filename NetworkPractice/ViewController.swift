@@ -9,11 +9,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var movieButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        movieButton.addTarget(self, action: #selector(movieButtonTapped), for: .touchUpInside)
+    }
+    
+    @objc func movieButtonTapped() {
+        print("무비버튼")
     }
 
-
+    @IBAction func lottoButtonTapped(_ sender: UIButton) {
+        print("로또버튼")
+    }
+    
 }
 
