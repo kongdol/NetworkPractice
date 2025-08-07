@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     @objc func movieButtonTapped() {
         
         print("무비버튼")
-        let vc = MovieViewController()
+        let vc = PlayMovieViewController()
         present(vc, animated: true)
     }
 
